@@ -11,19 +11,27 @@ $(document).ready(function () {
 
     $(window).scroll(function (e) {
         var scrollPos = $(window).scrollTop();
-        console.log(scrollPos);
+        var windowHeight = $(window).height();
+        //scroll spy
         $('.scrollTop').each(function () {
             var target = $(this).attr('href');
             var targetPos = $(target).offset().top - 90;
             var targetHeight = $(target).outerHeight();
-            console.log(target,targetPos,targetHeight);
             if (targetPos <= scrollPos && (targetPos + targetHeight) > scrollPos) {
                 $('scrollTop').removeClass('active');
                 $(this).addClass('active');
-            }else{
+            } else {
                 $(this).removeClass('active')
             };
         });
+        //animated icon
+        $('.animated').each(function () {
+            var thisPos = $(this).offset().top;
+            if ((windowHeight + scrollPos) >= thisPos) {
+                $(this).addClass('fadeIn');
+            }
+        });
     });
+
 
 });

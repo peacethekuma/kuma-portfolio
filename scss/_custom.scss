@@ -10,7 +10,8 @@ header {
         a {
             color: #727A72;
         }
-        a:hover,a.active {
+        a:hover,
+        a.active {
             text-decoration: none;
             color: white;
         }
@@ -30,13 +31,77 @@ h2 {
     h3 {
         display: block;
         font-style: italic;
-        top: 300px;
+        top: 250px;
     }
     @media (max-width: 576px) {
         h3 {
             color: #CED8C2;
         }
     }
+}
+
+// mouse animation
+.mouse {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -20px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    animation: invite 1s;
+}
+
+.scroll {
+    display: block;
+    width: 3px;
+    height: 6px;
+    margin: 6px auto;
+    border-radius: 4px;
+    background: #000;
+    animation: down 1.5s infinite;
+}
+
+@keyframes invite {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes down {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .mouse {
+        border: 2px solid #CED8C2;
+    }
+    .scroll {
+        background: #CED8C2;
+    }
+}
+
+.animated {
+    opacity: 0;
+    transition: all 1200ms;
+    transform: translateY(50px);
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #about {
@@ -59,9 +124,10 @@ h2 {
     background-color: rgba(216, 216, 216, 1);
     background-size: cover;
     opacity: 0;
+    line-height: 1.5;
     transition: opacity 500ms;
-    p{
-        padding:20px;
+    p {
+        padding: 0 20px;
         overflow: hidden;
     }
 }
