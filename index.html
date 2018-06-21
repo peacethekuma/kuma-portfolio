@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kuma's Resume</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/all.css">
 </head>
 
@@ -14,21 +15,21 @@
         <nav class="container-fluid">
             <div class="row justify-content-between align-items-baseline">
                 <div class="col-2">
-                    <h1 class="py-3 font-weight-bold text-center">Kuma.</h1>
+                    <h1 class="py-3 font-weight-bold text-right">Kuma's</h1>
                 </div>
                 <div class="topList col-6">
                     <ul class="d-flex justify-content-around h5">
                         <li>
-                            <a href="#">About</a>
+                            <a href="#about" class="scrollTop">About</a>
                         </li>
                         <li>
-                            <a href="#">Skill</a>
+                            <a href="#skill" class="scrollTop">Skill</a>
                         </li>
                         <li>
-                            <a href="#">Works</a>
+                            <a href="#works" class="scrollTop">Works</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#contact" class="scrollTop">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -90,46 +91,74 @@
     </div>
     <div id="works" class="bg-cover pb-5" style="background-image: url(img/banner_003.jpg);height: auto;width: 100%;background-attachment: fixed;">
         <div class="container">
-            <h2 class="text-center py-5 text-dark">Work</h2>
+            <h2 class="text-center py-5 text-dark">Works</h2>
             <div class="row  justify-content-center">
-                <div class="col-md-4">
-                    <div class="worksCard mb-4">
+                <div class="col-lg-4">
+                    <div class="worksCard mb-4 position-relative">
                         <a href="https://peacethekuma.github.io/hexschool-jQuery-final/" target="_blank">
+                            <div class="workInfo position-absolute text-center">
+                                <h4 class="pt-5">HTML 5/CSS/jQuery</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam!</p>
+                            </div>
                             <img src="img/work_jQuery-s.png" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="worksCard mb-4">
+                <div class="col-lg-4">
+                    <div class="worksCard mb-4 position-relative">
                         <a href="https://peacethekuma.github.io/Hex-Restaurant/" target="_blank">
+                            <div class="workInfo position-absolute text-center">
+                                <h4 class="pt-5">HTML 5/CSS/jQuery</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam!</p>
+                            </div>
+                            <div class="workInfo position-absolute text-center">
+                                <h4 class="pt-5">HTML 5/CSS/jQuery</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam!</p>
+                            </div>
                             <img src="img/work_RwdSass-s.png" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="worksCard mb-4">
+                <div class="col-lg-4">
+                    <div class="worksCard mb-4 position-relative">
                         <a href="https://peacethekuma.github.io/BMI-Calculator/" target="_blank">
+                            <div class="workInfo position-absolute text-center">
+                                <h4 class="pt-5">HTML 5/CSS/jQuery</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam!</p>
+                            </div>
                             <img src="img/work_BMI-s.png" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="worksCard mb-4">
+                <div class="col-lg-4">
+                    <div class="worksCard mb-4 position-relative">
                         <a href="https://peacethekuma.github.io/Kaoshung-Tour-Guide/" target="_blank">
+                            <div class="workInfo position-absolute text-center">
+                                <h4 class="pt-5">HTML 5/CSS/jQuery</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam!</p>
+                            </div>
                             <img src="img/work_JS-s.png" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="worksCard mb-4">
+                <div class="col-lg-4">
+                    <div class="worksCard mb-4 position-relative">
                         <a href="https://peacethekuma.github.io/Taichung-Speed-Measuring-Locations/" target="_blank">
+                            <div class="workInfo position-absolute text-center">
+                                <h4 class="pt-5">HTML 5/CSS/jQuery</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam!</p>
+                            </div>
                             <img src="img/work_mapAjax-s.png" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="worksCard mb-4">
+                <div class="col-lg-4">
+                    <div class="worksCard mb-4 position-relative">
                         <a href="https://peacethekuma.github.io/TheF2E-w01-TodoList/" target="_blank">
+                            <div class="workInfo position-absolute text-center">
+                                <h4 class="pt-5">HTML 5/CSS/jQuery</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam!</p>
+                            </div>
                             <img src="img/work_ToDoList-s.png" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -153,6 +182,7 @@
     <footer style="background-image: url(img/banner_003.jpg);height: auto;width: 100%;background-attachment: fixed;">
         <h4 class="text-center py-5 mb-0 text-white-50">Copyright © Kuma All rights reserved.</h4>
     </footer>
+    <script src="js/all.js"></script>
 </body>
 
 </html>

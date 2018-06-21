@@ -7494,7 +7494,7 @@ header {
     list-style: none; }
     header ul a {
       color: #727A72; }
-    header ul a:hover {
+    header ul a:hover, header ul a.active {
       text-decoration: none;
       color: white; }
   @media (max-width: 576px) {
@@ -7517,4 +7517,22 @@ h2 {
   line-height: 1.5; }
 
 .worksCard img {
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: ridge 2px #CED8C2; }
+
+.worksCard .workInfo {
+  height: 100%;
+  width: 100%;
+  color: #000;
+  background-color: #d8d8d8;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms; }
+  .worksCard .workInfo p {
+    padding: 20px;
+    overflow: hidden; }
+
+.worksCard:hover .workInfo {
+  opacity: 0.8; }
