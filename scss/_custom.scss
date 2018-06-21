@@ -8,10 +8,11 @@ header {
     ul {
         list-style: none;
         a {
-           color: #727A72;
+            color: #727A72;
         }
         a:hover {
             text-decoration: none;
+            color: white;
         }
     }
     @media (max-width: 576px) {
@@ -21,7 +22,7 @@ header {
     }
 }
 
-h2{
+h2 {
     font-weight: bold;
 }
 
@@ -33,14 +34,19 @@ h2{
     }
     @media (max-width: 576px) {
         h3 {
-        color: #CED8C2;
+            color: #CED8C2;
         }
     }
 }
 
-#about{
-    p{
+#about {
+    p {
         line-height: 1.5;
     }
 }
 
+.worksCard {
+    img {
+        border-radius: 3px;
+    }
+}

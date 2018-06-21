@@ -7495,7 +7495,8 @@ header {
     header ul a {
       color: #727A72; }
     header ul a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
   @media (max-width: 576px) {
     header .topList {
       display: none; } }
@@ -7514,3 +7515,6 @@ h2 {
 
 #about p {
   line-height: 1.5; }
+
+.worksCard img {
+  border-radius: 3px; }
