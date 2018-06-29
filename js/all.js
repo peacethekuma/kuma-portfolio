@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+// scroll to target
     $('.scrollTop').click(function (e) {
         e.preventDefault();
         var target = $(this).attr('href');
@@ -9,10 +9,10 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    // scrollSpy
     $(window).scroll(function (e) {
         var scrollPos = $(window).scrollTop();
         var windowHeight = $(window).height();
-        //scroll spy
         $('.scrollTop').each(function () {
             var target = $(this).attr('href');
             var targetPos = $(target).offset().top - 90;
@@ -27,11 +27,18 @@ $(document).ready(function () {
         //animated icon
         $('.animated').each(function () {
             var thisPos = $(this).offset().top;
-            if ((windowHeight + scrollPos) >= thisPos) {
+            if ((windowHeight + scrollPos - 300) >= thisPos) {
                 $(this).addClass('fadeIn');
             }
         });
     });
-
-
 });
+
+// Typeit
+var instance = new TypeIt('#myGreeting', {
+    speed: 35,
+    breakLines: false,
+    autoStart: false,
+    cursor:false,
+});
+

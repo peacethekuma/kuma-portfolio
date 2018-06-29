@@ -8,7 +8,7 @@ header {
     ul {
         list-style: none;
         a {
-            color: #727A72;
+            color: rgba(206, 203, 203, 0.8);
         }
         a:hover,
         a.active {
@@ -28,14 +28,20 @@ h2 {
 }
 
 #mainBanner {
-    h3 {
+    p {
         display: block;
         font-style: italic;
-        top: 250px;
+        top: 275px;
+        font-size: 48px;
+        line-height: 1.5;
     }
+    @media (max-width: 768px){
+        color: #CED8C2;
+    } 
     @media (max-width: 576px) {
-        h3 {
+        p {
             color: #CED8C2;
+            top: 200px;
         }
     }
 }
@@ -49,7 +55,7 @@ h2 {
     left: 50%;
     margin-left: -20px;
     border-radius: 15px;
-    border: 2px solid #000;
+    border: 2px solid rgba(216, 216, 216, 0.9);
     animation: invite 1s;
 }
 
@@ -59,7 +65,7 @@ h2 {
     height: 6px;
     margin: 6px auto;
     border-radius: 4px;
-    background: #000;
+    background: rgba(216, 216, 216, 0.9);
     animation: down 1.5s infinite;
 }
 
@@ -84,18 +90,9 @@ h2 {
     }
 }
 
-@media (max-width: 576px) {
-    .mouse {
-        border: 2px solid #CED8C2;
-    }
-    .scroll {
-        background: #CED8C2;
-    }
-}
-
 .animated {
     opacity: 0;
-    transition: all 1200ms;
+    transition: all 1000ms;
     transform: translateY(50px);
 }
 
