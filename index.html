@@ -42,7 +42,7 @@
 
 
     </header>
-    <div id="mainBanner" class="p-5 position-relative bg-cover" style="background-image: url(img/banner_001.jpg);height: 780px;width: 100%;background-attachment: fixed;">
+    <div id="mainBanner" class="p-5 position-relative bg-cover" style="background-image: url(img/banner001.jpg);height: 780px;width: 100%;background-attachment: fixed;">
         <div class="row justify-content-center container-fluid">
             <div id="typeit" class="col-lg-6 align-self-center">
                 <p id="myGreeting" class="position-absolute h1">
@@ -63,23 +63,21 @@
         </div>
     </div>
     <div id="about" class="bg-t-green container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <h2 class="pt-5 mb-4 text-center text-dark">About</h2>
-                <p class="pb-5 h3 text-t-gray">視覺設計專業出身，因緣際會接觸網頁設計後，開始對前端開發產生濃厚興趣， 決定自學培養前端領域的技能。喜歡觀察與思考，熱衷學習與實踐。享受找尋解答的過程，以及從無到有建構出作品的成就感。
-                </p>
-            </div>
+        <div class="d-flex flex-column justify-content-center">
+            <h2 class="pt-5 mb-4 text-center text-white-50">About</h2>
+            <p class="px-5 pb-5 h5 text-t-gray align-self-center">視覺傳達專業出身，因緣際會接觸網頁設計後，開始對前端開發產生濃厚興趣， 決定自學培養前端領域的技能。
+                <br>我喜歡觀察與思考，熱衷學習與實踐。在前端開發裡，我享受著找尋解答的過程，以及從無到有建構出作品的成就感。
+            </p>
         </div>
     </div>
     <div id="skill" class="container-fluid">
-        <h2 class="text-center pt-5 mb-4 text-dark">Skill</h2>
+        <h2 class="text-center pt-5 mb-4 text-t-gray">Skill</h2>
         <div class="row justify-content-between align-items-stretch">
             <div class="col-md-4">
-                <div class="skillCard  text-center p-4 animated">
+                <div class="skillCard  text-center p-4 animated d-flex flex-column align-items-center">
                     <img src="img/icon_css3.png" alt="css3 icon" style="max-width: 200px;">
-
-                    <h4 class="my-4 text-t-gray">HTML5 & CSS3 </h4>
-                    <ul class="pl-5 pb-5 text-left">
+                    <h3 class="my-4 text-dark">HTML5 & CSS3 </h3>
+                    <ul class="pb-5 mt-3 text-left h5">
                         <li>語意化的 HTML 網頁架構</li>
                         <li> CSS 手刻完成響應式網頁</li>
                         <li>運用 Bootstrap4 快速開發</li>
@@ -87,10 +85,10 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="skillCard  text-center p-4 animated">
+                <div class="skillCard  text-center p-4 animated d-flex flex-column align-items-center">
                     <img src="img/icon_js.png" alt="Js icon" style="max-width: 200px;">
-                    <h4 class="my-4 text-t-gray">Javascript</h4>
-                    <ul class="pl-5 pb-5 text-left">
+                    <h3 class="my-4 text-dark">Javascript</h3>
+                    <ul class="pb-5 mt-3 text-left h5">
                         <li>理解 Javascript 基本語法</li>
                         <li> AJAX 撈取遠端資料渲染至網頁</li>
                         <li>第三方 API 串接與應用</li>
@@ -98,10 +96,10 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="skillCard  text-center p-4 animated">
+                <div class="skillCard  text-center p-4 animated d-flex flex-column align-items-center">
                     <img src="img/icon_git.png" alt="git icon" style="max-width: 160px;" class="pt-3">
-                    <h4 class="mt-5 mb-3 text-t-gray">Git & GitHub</h4>
-                    <ul class="pl-5 pb-5 text-left">
+                    <h3 class="mt-5 mb-3 text-dark">Git & GitHub</h3>
+                    <ul class="pb-5 mt-3 h5 text-left">
                         <li> Git 版本控制基本指令</li>
                         <li> GitHub 上建立遠端數據庫</li>
                         <li>使用 GitHub Page 建立網頁</li>
@@ -110,9 +108,9 @@
             </div>
         </div>
     </div>
-    <div id="works" class="bg-cover pb-5" style="background-image: url(img/banner_003.jpg);height: auto;width: 100%;background-attachment: fixed;">
+    <div id="works" class="bg-cover pb-5" style="background-image: url(img/banner003.jpg);height: auto;width: 100%;background-attachment: fixed;">
         <div class="container">
-            <h2 class="text-center py-5 text-dark">Works</h2>
+            <h2 class="text-center py-5 text-white-50">Works</h2>
             <div class="row  justify-content-center">
                 <div class="col-md-4">
                     <div class="worksCard mb-4 position-relative">
@@ -179,18 +177,22 @@
     </div>
     <div id="contact">
         <h2 class="text-center py-5 text-t-gray">Contact</h2>
-            <div class="d-flex justify-content-center flex-column">
-                    <img src="img/selfportrait.jpg" alt="mypic" class="rounded-circle mb-4 align-self-center" style="width: 200px;height:200px;">
-                    <h5 class="align-self-center">詹嘉維 Kuma Chan </h5>
-                    <ul class="align-self-center">
-                        <li class="my-3"><i class="fas fa-map-marker-alt"></i> Taipei, Taiwan</li>
-                        <li class="my-3"><i class="fas fa-envelope"></i> peacethekuma@gmail.com</li>
-                        <li class="my-3"><i class="fas fa-mobile"></i> +886 952-195-838</li>
-                    </ul>
-            </div>
+        <div class="d-flex flex-column align-items-center">
+            <img src="img/selfportrait.jpg" alt="mypic" class="rounded-circle mb-4 align-self-center" style="width: 200px;height:200px;">
+            <h4>詹嘉維 Kuma Chan </h4>
+            <ul class="text-t-gray">
+                <li class="my-4">
+                    <i class="fas fa-map-marker-alt"></i> Taipei, Taiwan</li>
+                <li class="my-4">
+                    <i class="fas fa-envelope"></i> peacethekuma@gmail.com</li>
+                <li class="my-4">
+                    <i class="fas fa-mobile"></i> +886 952-195-838</li>
+            </ul>
+            <span class="text-center"><a href="https://github.com/peacethekuma" target="_blank" class="text-t-gray"><i class="fab fa-github fa-3x"></i><a></span>
+        </div>
     </div>
-    <footer style="background-image: url(img/banner_003.jpg);height: auto;width: 100%;background-attachment: fixed;">
-        <h5 class="text-center py-5 mb-0 text-white-50">Copyright © Kuma Chan All rights reserved.</h5>
+    <footer style="background-image: url(img/banner003.jpg);height: auto;width: 100%;background-attachment: fixed;">
+        <p class="text-center py-5 mb-0 text-white-50 h5">Copyright © Kuma Chan All rights reserved.</p>
     </footer>
     <script src="js/all.js"></script>
 </body>
